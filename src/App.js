@@ -10,6 +10,7 @@ import Offers from "./pages/Offers";
 import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Listing from "./pages/Listing";
 import CreateListing from "./pages/CreateListing";
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Explore />} />
 					<Route path="/category/:categoryName" element={<Category />} />
+					<Route
+						path="/category/:categoryName/:listingId"
+						element={<Listing />}
+					/>
 					<Route path="/profile" element={<PrivateRoute />}>
 						<Route path="/profile" element={<Profile />} />
 					</Route>
