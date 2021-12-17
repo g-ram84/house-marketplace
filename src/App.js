@@ -12,6 +12,7 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Listing from "./pages/Listing";
 import CreateListing from "./pages/CreateListing";
+import Contact from "./pages/Contact";
 
 function App() {
 	return (
@@ -32,6 +33,7 @@ function App() {
 					<Route path="/forgot-password" element={<ForgotPassword />} />
 					<Route path="/create-listing" element={<CreateListing />} />
 					<Route path="/offers" element={<Offers />} />
+					<Route path="/contact/:landlordId" element={<Contact />} />
 				</Routes>
 				<Navbar />
 			</Router>
